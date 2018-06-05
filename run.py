@@ -2,7 +2,7 @@
 # print(x/2)
 # print(type(x))
 # print(type(x/2))
-#
+
 # y = "hello"
 # z = " world"
 # print(y+z)
@@ -132,3 +132,31 @@
 #         print("nic")
 
 
+import time
+# print("Start")
+# time.sleep(2)
+# # stop pojawi się po 2 sekundach
+# print("Stop")
+
+# timer = time.time()
+# time.sleep(2)
+# d = time.time() - timer
+# print(d)
+
+# timer = time.time()
+# timer2 = time.time()
+# timer3 = time.time()
+# while True:
+#     if time.time() - timer > 2:
+#         print("minelo 2 sekundy")
+#         timer = time.time()
+#     if time.time() - timer2 >1:
+#         print("minela 1 sekunda")
+#         timer2 = time.time()
+#     if time.time() - timer3 >5:
+#         break
+
+import datetime
+teraz = datetime.datetime.now()
+print(str(teraz.hour)+" : "+str(teraz.minute))
+print(str(teraz.strftime("%H:%M  %d.%m.%Y")))
