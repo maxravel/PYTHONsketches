@@ -132,7 +132,7 @@
 #         print("nic")
 
 
-import time
+# import time
 # print("Start")
 # time.sleep(2)
 # # stop pojawi się po 2 sekundach
@@ -156,7 +156,21 @@ import time
 #     if time.time() - timer3 >5:
 #         break
 
-import datetime
-teraz = datetime.datetime.now()
-print(str(teraz.hour)+" : "+str(teraz.minute))
-print(str(teraz.strftime("%H:%M  %d.%m.%Y")))
+# import datetime
+# teraz = datetime.datetime.now()
+# print(str(teraz.hour)+" : "+str(teraz.minute))
+# print(str(teraz.strftime("%H:%M  %d.%m.%Y")))
+
+
+# def printme(liczba):
+#     print("hello")
+#     print(liczba)
+#
+# printme(5)
+
+# def mnoz(a,b=4):
+#     return a*b
+# 
+# wynik = mnoz(2)
+# 
+# print(wynik)
