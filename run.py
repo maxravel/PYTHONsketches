@@ -174,3 +174,27 @@
 # wynik = mnoz(2)
 # 
 # print(wynik)
+
+
+
+# # import file
+# import new
+# new.test("hello")
+# new.test("121")
+
+# # import function from file
+# from new import test
+# test("hello")
+# test("121")
+
+# # import all from file
+# from new import *
+# test("another one")
+
+# def testOne():
+#     print("Test one run.py")
+
+# # import function with same name as another name
+# from new import testOne as testOneNew
+# testOne()
+# testOneNew()
