@@ -198,3 +198,18 @@
 # from new import testOne as testOneNew
 # testOne()
 # testOneNew()
+
+
+
+# files, tribes
+# r - read, r+ - read+write, w - also create, w+, a, a+
+# f = open("plik.txt","w")
+# f.write("test1")
+# f.close()
+# \n - write in new line
+
+# f = open("plik.txt","r")
+# # print(f.read())
+# # print(f.readlines())
+# print(f.readline())
+# f.close()
