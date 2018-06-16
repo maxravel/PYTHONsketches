@@ -213,3 +213,8 @@
 # # print(f.readlines())
 # print(f.readline())
 # f.close()
+
+# f = open("plik.txt","r")
+# for line in f.readlines():
+#     print(line)
+# f.close()
