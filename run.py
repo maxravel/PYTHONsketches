@@ -218,3 +218,43 @@
 # for line in f.readlines():
 #     print(line)
 # f.close()
+
+
+
+# # folders
+# import os
+# lista = os.listdir(".")
+# print(lista)
+#
+# for item in os.listdir("."):
+#     # print(item)
+#     if os.path.isfile(item):
+#         # .format put in curly braces item from ()
+#         print("{} is a file".format(item))
+#     elif os.path.isdir("."):
+#         print("{} is a folder".format(item))
+#     else:
+#         print("{} is not a folder or file".format(item))
+
+# # creating folder
+# import os
+# os.mkdir("newFolder")
+
+# # rename folder
+# os.rename("newFolder","bestFolder")
+
+# # remove directory - os.rmdir("directory"); remove file - os.remove("file")
+# os.rmdir("bestFolder")
+
+# open("test2.txt","w").close()
+
+
+# # making directories
+# import os
+# path="pliki/11/data.txt"
+# print(os.path.dirname(path))
+# print(os.path.basepath(path))
+# print(os.path.abspath(path))
+# os.makedirs(os.path.dirname(path))
+# open(path,"w").close()
+
