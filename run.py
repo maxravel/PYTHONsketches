@@ -258,3 +258,67 @@
 # os.makedirs(os.path.dirname(path))
 # open(path,"w").close()
 
+
+
+
+#exceptions
+
+# try:
+#     file = open("tekst.txt","r+")
+#     file.write("tester")
+#     file.close()
+# # if file can't be created exception works:
+# except FileNotFoundError as e:
+#     print("wystąpił błąd z plikiem")
+#     print(e)
+#
+# try:
+#     file2 = open("plik.txt","r")
+#     file2.write("xero")
+#     file.close()
+# except FileNotFoundError as e:
+#     print("wystąpił błąd z plikiem")
+#     print(e)
+# except:
+#     print("some other error")
+
+
+
+# # objects
+# class Calculator():
+#     def __init__(self):
+#         print("init")
+#     def __del__(self):
+#         print("del")
+#     def __str__(self):
+#         return "hello"
+#     def __len__(self):
+#         return 6
+#     def __bool__(self):
+#         return False
+#     def dodaj(self, a, b):
+#         wynik = a+b
+#         print(wynik)
+#     def odejmij(self, a, b):
+#         wynik = a-b
+#         print(wynik)
+
+# my_calculator = Calculator()
+#
+# my_calculator.dodaj(2,3)
+
+# test = Calculator()
+# # this del deletes test variable:
+# del test
+# print(test)
+
+# test3 = Calculator()
+# test3.dodaj(3,3)
+# # this prints hello (__str__) when converting to string
+# print(test3)
+
+# if test3:
+## __bool__ store boolean value of class
+#     print("True")
+# else:
+#     print("Falseeee")
