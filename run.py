@@ -288,6 +288,8 @@
 # class Calculator():
 #     def __init__(self):
 #         print("init")
+#         #declaring self parametr
+#         self.liczba=10
 #     def __del__(self):
 #         print("del")
 #     def __str__(self):
@@ -322,3 +324,31 @@
 #     print("True")
 # else:
 #     print("Falseeee")
+
+# calc = Calculator()
+# calc.liczba = 10
+# calc.liczba+=5
+# print(calc.liczba)
+#
+# calc2 = Calculator()
+# calc2.liczba+=5
+# print(calc2.liczba)
+
+# class Calculator2:
+#     def __init__(self):
+#         self.ostatni_wynik = 0
+#
+#     def dodaj(self, a, b):
+#         wynik = a+b
+#         self.ostatni_wynik = wynik
+#         print(wynik)
+#     def odejmij(self, a, b):
+#         wynik = a - b
+#         self.ostatni_wynik = wynik
+#         print(wynik)
+#
+# calc21 = Calculator2()
+# calc21.dodaj(3,2)
+# calc21.dodaj(10,5)
+# calc21.odejmij(17,9)
+# print("Ostatni wynik:{}".format(calc21.ostatni_wynik))
