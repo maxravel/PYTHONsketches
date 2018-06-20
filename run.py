@@ -352,3 +352,78 @@
 # calc21.dodaj(10,5)
 # calc21.odejmij(17,9)
 # print("Ostatni wynik:{}".format(calc21.ostatni_wynik))
+
+
+
+# # inheritence
+# class Parent():
+#     def __init__(self):
+#         print("Parent init")
+#     def parent(self):
+#         print("Parent parent")
+#     def poke(self):
+#         print("Parent poked")
+
+# parent = Parent()
+# parent.parent()
+# parent.poke()
+
+# class Child(Parent):
+#     def __init__(self):
+#         # super is realising parent __init__ function
+#         super().__init__()
+#         print("Child init")
+#     def poke(self):
+#         super().poke()
+#         print("Child poked")
+#
+# child = Child()
+# child.poke()
+# child.parent()
+
+# class Person():
+#     def __init__(self, name):
+#         self.name = name
+#         self.surname = "Kwiatkowski"
+#         self.age = 25
+#
+# class Employee(Person):
+#     def __init__(self, position):
+#         super().__init__("Tomek")
+#         self.position = position
+#         self.specialization = "Python"
+#
+# class Client(Person):
+#     def __init__(self, name):
+#         super().__init__(name)
+#         self.ordered = "website"
+#
+# worker = Employee("programmer")
+# print(worker.name)
+# print(worker.position)
+# print(worker.specialization)
+
+# worker2 = Employee("designer")
+# print(worker2.position)
+#
+# buyer = Client("Marta")
+# print(buyer.name)
+
+
+
+# # Exceptions
+# class TooColdException(Exception):
+#     def __init__(self, temp):
+#         super().__init__("Temperature {} is below absolute zero.".format(temp))
+#
+# def celsius_to_kelvin(temp):
+#     if temp < -273:
+#         raise TooColdException(temp)
+#     return temp+273
+#
+# # try:
+# #     print(celsius_to_kelvin(-300))
+# # except TooColdException:
+# #     print("Too cold")
+#
+# print(celsius_to_kelvin(-300))
