@@ -427,3 +427,41 @@
 # #     print("Too cold")
 #
 # print(celsius_to_kelvin(-300))
+
+
+
+# ************TRAVERSY MEDIA CRASH COURSE
+
+"""
+this is
+multiline
+comments
+"""
+
+# # this prints multiline string
+# print("""fsdfsdfsd
+# sdsdfdsf
+# sdfsdfsfds""")
+#
+# print("hello"[2:4])
+# # this above printing ll
+#
+# print(2,3,4,"string")
+# # printing in new line
+# print("line1\nline2\nline3")
+
+# # variables and data types
+# greeting = "hello world"
+# print(greeting)
+# myStr = "hello"
+# myInt = 5
+# myFloat = 2.3
+# print(type(myFloat))
+
+myList = [1, 2, 3, "abc"]
+myDictionary = {"a":1,"b":2,"c":3}
+print(type(myList), myList)
+print(type(myDictionary), myDictionary)
+
+print(myList[3])
+print(myDictionary["a"])
