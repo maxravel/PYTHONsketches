@@ -2,7 +2,7 @@
 # print(x/2)
 # print(type(x))
 # print(type(x/2))
-
+#
 # y = "hello"
 # z = " world"
 # print(y+z)
@@ -170,30 +170,30 @@
 
 # def mnoz(a,b=4):
 #     return a*b
-# 
+#
 # wynik = mnoz(2)
-# 
+#
 # print(wynik)
 
 
-
+#
 # # import file
 # import new
 # new.test("hello")
 # new.test("121")
-
+#
 # # import function from file
 # from new import test
 # test("hello")
 # test("121")
-
+#
 # # import all from file
 # from new import *
 # test("another one")
-
+#
 # def testOne():
 #     print("Test one run.py")
-
+#
 # # import function with same name as another name
 # from new import testOne as testOneNew
 # testOne()
@@ -257,7 +257,6 @@
 # print(os.path.abspath(path))
 # os.makedirs(os.path.dirname(path))
 # open(path,"w").close()
-
 
 
 
@@ -458,10 +457,101 @@ comments
 # myFloat = 2.3
 # print(type(myFloat))
 
-myList = [1, 2, 3, "abc"]
-myDictionary = {"a":1,"b":2,"c":3}
-print(type(myList), myList)
-print(type(myDictionary), myDictionary)
+# myList = [1, 2, 3, "abc"]
+# myDictionary = {"a":1,"b":2,"c":3}
+# print(type(myList), myList)
+# print(type(myDictionary), myDictionary)
+#
+# print(myList[3])
+# print(myDictionary["a"])
 
-print(myList[3])
-print(myDictionary["a"])
+
+
+# # CONDITIONALS
+# x = 4;
+#
+# # basic if
+# if x < 6:
+#     print("this is true")
+#     print("only here it will be works")
+#
+# # if and else
+# if x > 6:
+#     print("your number is greater than 6")
+# else:
+#     print("your number is lower than 6")
+#
+# # elif
+# color = "blue"
+# if color == "red":
+#     print("color is red")
+# elif color == "blue":
+#     print("color is blue")
+# else:
+#     print("color is different")
+#
+# # nested if
+# if color == "blue":
+#     if x <10:
+#         print("color is blue and x is lower than 10")
+#
+# # logical operators
+# if color == "blue" and x <10:
+#     print("true")
+
+
+
+# # LOOPs
+# # FOR LOOP
+# people = ["jonh","barry","bob","alf"]
+# for person in people:
+#     print("current person: ", person)
+#
+# for i in range(len(people)):
+#     print("current person: ", people[i])
+#
+# for i in range(1,10):
+#     print(i)
+#
+# # while loop
+# count = 0
+# while count < 10:
+#     print("count: ", count)
+#     if count == 5:
+#         break
+#     count = count + 1
+
+
+
+# functions
+
+# default name is barry, but when you put different function output will be different
+def sayHello(name = "barry"):
+    print("hello", name)
+
+sayHello("alf")
+
+def getSum(num1,num2):
+    total = num1 + num2
+    return total
+
+numSum = getSum(3,4)
+print(numSum)
+
+# scope
+def addOneToNum(num):
+    num = num + 1
+    print("value inside a function", num)
+    return num
+
+num = 5
+addOneToNum(num)
+print("value outside a function", num)
+
+def addOneToList(myList):
+    myList.append(4)
+    print("myList inside function: ", myList)
+
+myList = [1,2,3]
+addOneToList(myList)
+print("myList outside function:", myList)
