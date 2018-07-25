@@ -523,35 +523,74 @@ comments
 
 
 
-# functions
+# # functions
+#
+# # default name is barry, but when you put different function output will be different
+# def sayHello(name = "barry"):
+#     print("hello", name)
+#
+# sayHello("alf")
+#
+# def getSum(num1,num2):
+#     total = num1 + num2
+#     return total
+#
+# numSum = getSum(3,4)
+# print(numSum)
+#
+# # scope
+# def addOneToNum(num):
+#     num = num + 1
+#     print("value inside a function", num)
+#     return num
+#
+# num = 5
+# addOneToNum(num)
+# print("value outside a function", num)
+#
+# def addOneToList(myList):
+#     myList.append(4)
+#     print("myList inside function: ", myList)
+#
+# myList = [1,2,3]
+# addOneToList(myList)
+# print("myList outside function:", myList)
 
-# default name is barry, but when you put different function output will be different
-def sayHello(name = "barry"):
-    print("hello", name)
 
-sayHello("alf")
 
-def getSum(num1,num2):
-    total = num1 + num2
-    return total
-
-numSum = getSum(3,4)
-print(numSum)
-
-# scope
-def addOneToNum(num):
-    num = num + 1
-    print("value inside a function", num)
-    return num
-
-num = 5
-addOneToNum(num)
-print("value outside a function", num)
-
-def addOneToList(myList):
-    myList.append(4)
-    print("myList inside function: ", myList)
-
-myList = [1,2,3]
-addOneToList(myList)
-print("myList outside function:", myList)
+# # string functions
+# myStr = "Hello World!"
+#
+# # only first letter is capitalize
+# print(myStr.capitalize())
+#
+# # first letter is lower, other are capitalize
+# print(myStr.swapcase())
+#
+# # get length
+# print(len(myStr))
+#
+# # replace
+# print(myStr.replace("World","Everyone"))
+#
+# # count - counting nummber of something
+# sub = "l"
+# print(myStr.count(sub))
+#
+# # startswith() - checking if something starts with signs
+# print(myStr.startswith("Hello"))
+#
+# # endswith() - checking if string ends with parameter substring
+# print(myStr.endswith("!"))
+#
+# # split to list
+# print(myStr.split())
+#
+# # find - checking position of substring
+# print(myStr.find("lo"))
+#
+# # index
+# print(myStr.index("l"))
+#
+# # is alphanumeric - checking if string is alphanumeric
+# print(myStr.isalpha())
