@@ -594,3 +594,78 @@ comments
 #
 # # is alphanumeric - checking if string is alphanumeric
 # print(myStr.isalpha())
+
+
+
+# WORKING ON MODULES
+# # you need to have file new.py with function sayHello
+# import new
+# new.sayHello("mark")
+
+# # you import only one function
+# from new import sayGoodbye
+# sayGoodbye("andy")
+
+
+
+# # OPENING FILES
+# openingVariable = open("plik.txt","w")
+# # printing name of file
+# print("Name: ", openingVariable.name)
+# # checking if file is closed
+# print("Is Closed: ",openingVariable.closed)
+# # checking mode of file
+# print("Mode of file: ", openingVariable.mode)
+# openingVariable.write("Python is ok")
+# openingVariable.write("Javascript is better")
+# openingVariable.close()
+#
+# # opening again and write something replace the previous text
+# openingVariable = open("plik.txt","w")
+# openingVariable.write("i don't like java")
+# openingVariable.close()
+#
+# # using append mode - letter "a" - append new text,
+# openingVariable = open("plik.txt","a")
+# openingVariable.write(" python is the best")
+# openingVariable.close()
+#
+# # using "r+" mode you can read variable and print it out
+# openingVariable = open("plik.txt", "r+")
+# readingVariable = openingVariable.read(10)
+# # reading only first 10 characters when you put 10 in read()
+# print(readingVariable)
+
+
+
+# CLASSES & OBJECTS
+class Person:
+    __name = ''
+    __email = ''
+
+    def __init__(self, name, email):
+        self.__name = name
+        self.__email = email
+
+    def set_name(self, name):
+        self.__name = name
+
+    def get_name(self):
+        return self.__name
+
+    def set_email(self, email):
+        self.__email = email
+
+    def get_email(self):
+        return self.__email
+
+andy = Person()
+andy.set_name("Andy")
+andy.set_email("andy@gmail.com")
+print(andy.get_name())
+
+# this don't' work!!!!!!!!!!!!11
+mark = Person("Mark", "mark@gmail.com")
+print(mark.get_name())
+
+
